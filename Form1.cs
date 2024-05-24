@@ -20,6 +20,10 @@ namespace Proyecto
         private void button1_Click(object sender, EventArgs e)
         {
             //Como subir cambios del proyecto/ guardar cambios del proyecto
+
+
+
+            // Actualizaste tus cambios!
         }
     }
 }
