@@ -19,13 +19,13 @@ namespace Proyecto
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ///Como descargar otros cambios de el proyecto
+            ///Hola
             
             //Holaaaaaaaaaaaaaaaaaaaaaaaaa
 
 
 
-            
+            //Muchos cambios todos locos
         }
     }
 }
