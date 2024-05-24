@@ -19,7 +19,9 @@ namespace Proyecto
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Como subir cambios del proyecto/ guardar cambios del proyecto
+            ///Como descargar otros cambios de el proyecto
+            
+            
 
 
 
