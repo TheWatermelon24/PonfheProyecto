@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Proyecto
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-
-        Form2 ImplementaMenu;
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
-           
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            ImplementaMenu = new Form2();
-            ImplementaMenu.Show();
         }
     }
 }
