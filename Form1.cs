@@ -22,9 +22,11 @@ namespace Proyecto
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
+                ImplementaMenu = new Form2();
+                ImplementaMenu.Show();
 
-            ImplementaMenu = new Form2();
-            ImplementaMenu.Show();
+           
         }
     }
 }
