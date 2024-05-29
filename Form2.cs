@@ -41,6 +41,7 @@ namespace Proyecto
                 if (temporal < 11 && temporal > -1)
                 {
                     prac[i] = (temporal);
+                    prac_c = prac_c + prac[i];
                 }
 
 
@@ -52,6 +53,8 @@ namespace Proyecto
                 
                 
             }
+
+            prac_c = prac_c / prac;
             
         }
 
