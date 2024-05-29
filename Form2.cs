@@ -54,7 +54,7 @@ namespace Proyecto
                 
             }
 
-            prac_c = prac_c / prac;
+            prac_c = prac_c / practicas;
             
         }
 
