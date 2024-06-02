@@ -541,7 +541,6 @@ namespace Proyecto
                         MessageBox.Show($"Tu calificación es {calf}");
                         break;
                 }
-
             } while (op != 0);
         }
     }
