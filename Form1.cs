@@ -20,6 +20,9 @@ namespace Proyecto
         Form6 ForMenu;
         Form7 CulMenu;
         Form8 quiMenu;
+        Form9 LeoMenu;
+        Form10 INglMenu;
+        Form11 CiensMenu;
         public Form1()
         {
             InitializeComponent();
@@ -69,6 +72,24 @@ namespace Proyecto
         {
             quiMenu = new Form8();
             quiMenu.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            LeoMenu = new Form9();
+            LeoMenu.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            INglMenu = new Form10();
+            INglMenu.Show();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            CiensMenu = new Form11();
+            CiensMenu.Show();
         }
     }
 }
