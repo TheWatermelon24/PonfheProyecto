@@ -18,6 +18,7 @@ namespace Proyecto
         Form4 CodificaMenu;
         Form5 MateMenu;
         Form6 ForMenu;
+        Form7 CulMenu;
         public Form1()
         {
             InitializeComponent();
@@ -55,6 +56,12 @@ namespace Proyecto
         {
             ForMenu = new Form6();
             ForMenu.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            CulMenu = new Form7();
+            CulMenu.Show();
         }
     }
 }
