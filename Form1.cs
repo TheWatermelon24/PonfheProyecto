@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -76,14 +77,143 @@ namespace Proyecto
 
         private void button8_Click(object sender, EventArgs e)
         {
-            LeoMenu = new Form9();
-            LeoMenu.Show();
+            int a = 0;
+
+            do
+            {
+                int d, tp, te;
+                float calt, calpr, calex, calas, ca, final;
+                d = int.Parse(Interaction.InputBox("Materia: Leoye\nIngresa de que quieres saber tu calificación?\n 1.Parcial\n2.Semestre\n3.Para Salir"));
+                switch (d)
+                {
+
+                    case 1:
+
+                        tp = int.Parse(Interaction.InputBox("Ingresa la cantidad de trabajos pedidos por la maestra:"));
+                        te = int.Parse(Interaction.InputBox("Ingresa la cantidad de trabajos entregados:"));
+                        calt = (float)(((tp / te) * 10) * 0.3);
+                        calpr = float.Parse(Interaction.InputBox("Ingresa tu calificacion del proyecto"));
+                        calpr = (float)(calpr * 0.3);
+                        calex = float.Parse(Interaction.InputBox("Ingresa tu calificacion del examen"));
+                        calex = (float)(calex * 0.3);
+                        calas = int.Parse(Interaction.InputBox("Ingresa tu calificación de asistencias"));
+                        ca = (float)(calas * 0.1);
+                        final = ca + calpr + calt + calex;
+                        MessageBox.Show("Tu calificación del parcial es " + final);
+
+
+
+                        break;
+                    case 2:
+
+                        float p1, p2, p3, pf;
+                        p1 = float.Parse(Interaction.InputBox("Ingresa tu calificación del parcial 1"));
+                        p2 = float.Parse(Interaction.InputBox("Ingresa tu calificación del parcial 2"));
+                        p3 = float.Parse(Interaction.InputBox("Ingresa tu calificación del parcial 3"));
+                        pf = (p1 + p2 + p3) / 3;
+                        MessageBox.Show("Promedio final: " + pf);
+                        break;
+
+                    case 3:
+                        a = 5;
+                        break;
+                    default:
+                        MessageBox.Show("Ingresa un valor valido");
+                        break;
+                }
+            } while (a != 5);
+
+            a = 0;
+
+            do
+            {
+                int d, tp, te;
+                float calt, calpr, calex, calas, ca, final;
+                d = int.Parse(Interaction.InputBox("Materia: Leoye\nIngresa de que quieres saber tu calificación?\n 1.Parcial\n2.Semestre\n3.Para Salir"));
+                switch (d)
+                {
+
+                    case 1:
+
+                        tp = int.Parse(Interaction.InputBox("Ingresa la cantidad de trabajos pedidos por la maestra:"));
+                        te = int.Parse(Interaction.InputBox("Ingresa la cantidad de trabajos entregados:"));
+                        calt = (float)(((tp / te) * 10) * 0.3);
+                        calpr = float.Parse(Interaction.InputBox("Ingresa tu calificacion del proyecto"));
+                        calpr = (float)(calpr * 0.3);
+                        calex = float.Parse(Interaction.InputBox("Ingresa tu calificacion del examen"));
+                        calex = (float)(calex * 0.3);
+                        calas = int.Parse(Interaction.InputBox("Ingresa tu calificación de asistencias"));
+                        ca = (float)(calas * 0.1);
+                        final = ca + calpr + calt + calex;
+                        MessageBox.Show("Tu calificación del parcial es " + final);
+
+
+
+                        break;
+                    case 2:
+
+                        float p1, p2, p3, pf;
+                        p1 = float.Parse(Interaction.InputBox("Ingresa tu calificación del parcial 1"));
+                        p2 = float.Parse(Interaction.InputBox("Ingresa tu calificación del parcial 2"));
+                        p3 = float.Parse(Interaction.InputBox("Ingresa tu calificación del parcial 3"));
+                        pf = (p1 + p2 + p3) / 3;
+                        MessageBox.Show("Promedio final: " + pf);
+                        break;
+
+                    case 3:
+                        a = 5;
+                        break;
+                    default:
+                        MessageBox.Show("Ingresa un valor valido");
+                        break;
+                }
+            } while (a != 5);
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            INglMenu = new Form10();
-            INglMenu.Show();
+            //INglMenu = new Form10();
+            //INglMenu.Show();
+            int a = 0, d;
+
+            int calv, ce, cl;
+            float rcalv, rce, rcl, fin;
+            do
+            {
+                d = int.Parse(Interaction.InputBox("Ingresa de que quieres saber tu calificación\n 1.Parcial\n2.Semestre\n3.Para Salir", "Ingles"));
+                switch (d)
+                {
+                    case 1:
+                        calv = int.Parse(Interaction.InputBox("Ingresa tu calificación del aula virtual: "));
+                        rcalv = (float)(calv * 0.2);
+                        ce = int.Parse(Interaction.InputBox("Ingresa tu calificación del examen"));
+                        rce = (float)(ce * 0.7);
+                        cl = int.Parse(Interaction.InputBox("Ingresa tu calificación del libro"));
+                        rcl = (float)(cl * 0.1);
+                        fin = rcl + rce + rcalv;
+                        MessageBox.Show("Tu calificación del parcial es:" + fin);
+
+
+                        break;
+
+                    case 2:
+                        float p1, p2, p3, pf;
+                        p1 = float.Parse(Interaction.InputBox("Ingresa tu calificación del parcial 1"));
+                        p2 = float.Parse(Interaction.InputBox("Ingresa tu calificación del parcial 2"));
+                        p3 = float.Parse(Interaction.InputBox("Ingresa tu calificación del parcial 3"));
+                        pf = (p1 + p2 + p3) / 3;
+                        MessageBox.Show("Promedio final: " + pf);
+                        break;
+
+                    case 3:
+                        a = 5;
+                        break;
+                    default:
+                        MessageBox.Show("Ingresa un valor valido");
+                        break;
+                }
+
+            } while (a != 5);
         }
 
         private void button10_Click(object sender, EventArgs e)

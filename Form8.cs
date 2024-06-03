@@ -23,6 +23,9 @@ namespace Proyecto
         {
             int opcion, calf;
             int tape, taen, a1, a2, pp, pe, a3, a4, pro, a5, exa, a6, a7, calif1, calif2, calif3;
+            calif1 = 0;
+            calif2 = 0;
+            calif3 = 0;
             do
             {
                 opcion = Int16.Parse(Interaction.InputBox(
