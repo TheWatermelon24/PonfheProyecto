@@ -71,7 +71,14 @@ namespace Proyecto
 
         private void button4_Click(object sender, EventArgs e)
         {
+            double par1, par2, par3;
 
+            par1 = double.Parse(Interaction.InputBox("Cual es su calificación del Parcial 1"));
+            par2 = double.Parse(Interaction.InputBox("Cual es su calificación del Parcial 2"));
+            par3 = double.Parse(Interaction.InputBox("Cual es su calificación del Parcial 3"));
+
+            double calf = (par1 + par2 + par3) / 3;
+            MessageBox.Show($"Tu calificación es {calf}");
         }
     }
 }

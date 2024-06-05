@@ -36,40 +36,37 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(215, 246);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Location = new System.Drawing.Point(161, 200);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(636, 139);
+            this.button4.Size = new System.Drawing.Size(477, 113);
             this.button4.TabIndex = 11;
             this.button4.Text = "Semestre ";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(644, 169);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(483, 137);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(207, 70);
+            this.button3.Size = new System.Drawing.Size(155, 57);
             this.button3.TabIndex = 10;
             this.button3.Text = "Parcial 3";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(430, 169);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(322, 137);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(207, 70);
+            this.button2.Size = new System.Drawing.Size(155, 57);
             this.button2.TabIndex = 9;
             this.button2.Text = "Parcial 2";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(215, 169);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(161, 137);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(207, 70);
+            this.button1.Size = new System.Drawing.Size(155, 57);
             this.button1.TabIndex = 8;
             this.button1.Text = "Parcial 1";
             this.button1.UseVisualStyleBackColor = true;
@@ -77,14 +74,13 @@
             // 
             // Form10
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form10";
             this.Text = "Ingles";
             this.ResumeLayout(false);
