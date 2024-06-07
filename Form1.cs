@@ -175,5 +175,11 @@ namespace Proyecto
             CiensMenu = new Form11();
             CiensMenu.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            string text = "Calificaciones faltantes: ";
+            this.label1.Text = text;
+        }
     }
 }

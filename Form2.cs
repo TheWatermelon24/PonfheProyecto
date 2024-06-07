@@ -78,6 +78,10 @@ namespace Proyecto
             }
             label6.Text = "Calificación Parcial 1: " + ((prac_c + tar_c + exa_c)) + " / 10";
             MessageBox.Show(label6.Text, "Resultado");
+
+
+            string text = "Calificaciones faltantes: ";
+            this.label1.Text = text;
         }
 
         private void numericUpDown4_ValueChanged(object sender, EventArgs e)
@@ -145,6 +149,9 @@ namespace Proyecto
             }
             label8.Text = "Calificación Parcial 2: " + ((prac_c + tar_c + exa_c)) + " / 10";
             MessageBox.Show(label8.Text, "Resultado");
+
+            string text = "Calificaciones faltantes: ";
+            this.label1.Text = text;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -207,6 +214,9 @@ namespace Proyecto
             }
             label14.Text = "Calificación Parcial 3: " + ((prac_c + tar_c + exa_c)) + " / 10";
             MessageBox.Show(label14.Text, "Resultado");
+
+            string text = "Calificaciones faltantes: ";
+            this.label1.Text = text;
         }
     }
 }
