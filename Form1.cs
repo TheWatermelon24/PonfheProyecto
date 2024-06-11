@@ -24,10 +24,52 @@ namespace Proyecto
         Form9 LeoMenu;
         Form10 INglMenu;
         Form11 CiensMenu;
+
         public Form1()
         {
             InitializeComponent();
-           
+            string[,] FALTAN = new string[10, 4];
+            FALTAN[0, 0] = "IS P1";
+            FALTAN[0, 1] = "IS P2";
+            FALTAN[0, 2] = "IS P3";
+            FALTAN[0, 3] = "IS S";
+            FALTAN[1, 0] = "DS P1";
+            FALTAN[1, 1] = "DS P2";
+            FALTAN[1, 2] = "DS P3";
+            FALTAN[1, 3] = "DS S";
+            FALTAN[2, 0] = "CS P1";
+            FALTAN[2, 1] = "CS P2";
+            FALTAN[2, 2] = "CS P3";
+            FALTAN[2, 3] = "CS S";
+            FALTAN[3, 0] = "PM P1";
+            FALTAN[3, 1] = "PM P2";
+            FALTAN[3, 2] = "PM P3";
+            FALTAN[3, 3] = "PM S";
+            FALTAN[4, 0] = "FS P1";
+            FALTAN[4, 1] = "FS P2";
+            FALTAN[4, 2] = "FS P3";
+            FALTAN[4, 3] = "FS S";
+            FALTAN[5, 0] = "CD P1";
+            FALTAN[5, 1] = "CD P2";
+            FALTAN[5, 2] = "CD P3";
+            FALTAN[5, 3] = "CD S";
+            FALTAN[6, 0] = "CE P1";
+            FALTAN[6, 1] = "CE P2";
+            FALTAN[6, 2] = "CE P3";
+            FALTAN[6, 3] = "CE S";
+            FALTAN[7, 0] = "LyC P1";
+            FALTAN[7, 1] = "LyC P2";
+            FALTAN[7, 2] = "LyC P3";
+            FALTAN[7, 3] = "LyC S";
+            FALTAN[8, 0] = "I P1";
+            FALTAN[8, 1] = "I P2";
+            FALTAN[8, 2] = "I P3";
+            FALTAN[8, 3] = "I S";
+            FALTAN[9, 0] = "CiSo P1";
+            FALTAN[9, 1] = "CiSo P2";
+            FALTAN[9, 2] = "CiSo P3";
+            FALTAN[9, 3] = "CiSo S";
+            this.label1.Text = calcularFaltantes(FALTAN);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -180,6 +222,24 @@ namespace Proyecto
         {
             string text = "Calificaciones faltantes: ";
             this.label1.Text = text;
+        }
+
+        public string calcularFaltantes(string[,] FALTAN)
+        {
+            string text = "";
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    text += $"|  {FALTAN[j,i]}  ";
+                    if (i == 3)
+                    {
+                        text += "  ";
+                    }
+                }
+                text += "\n";
+            }
+            return text;
         }
     }
 }

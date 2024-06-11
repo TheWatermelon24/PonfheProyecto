@@ -14,7 +14,6 @@ namespace Proyecto
         [STAThread]
         static void Main()
         {
-            string[] FALTANTE = new string[40];
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

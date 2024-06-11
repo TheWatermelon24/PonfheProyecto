@@ -21,6 +21,7 @@ namespace Proyecto
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             int practicas = int.Parse(Interaction.InputBox("Cuantas practicas hizo el maestro"));
 
             double temporal;
