@@ -25,10 +25,10 @@ namespace Proyecto
         Form10 INglMenu;
         Form11 CiensMenu;
 
+        string[,] FALTAN = new string[10, 4];
         public Form1()
         {
             InitializeComponent();
-            string[,] FALTAN = new string[10, 4];
             FALTAN[0, 0] = "IS P1";
             FALTAN[0, 1] = "IS P2";
             FALTAN[0, 2] = "IS P3";
@@ -220,8 +220,7 @@ namespace Proyecto
 
         private void label1_Click(object sender, EventArgs e)
         {
-            string text = "Calificaciones faltantes: ";
-            this.label1.Text = text;
+            this.label1.Text = calcularFaltantes(FALTAN);
         }
 
         public string calcularFaltantes(string[,] FALTAN)
@@ -240,6 +239,26 @@ namespace Proyecto
                 text += "\n";
             }
             return text;
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("" +
+                "IS: Implementa Software\n" +
+                "DS: Diseña Software\n" +
+                "CS: Codifica Software\n" +
+                "PM: Pensamiento Matematico\n" +
+                "FS: Formación Socioemocional\n" +
+                "CD: Cultura Digital\n" +
+                "CE: Conservación de la Energía\n" +
+                "LyC: Lengua y Comunicación\n" +
+                "I: Inglés\n" +
+                "CiSo: Ciencias Sociales");
+            MessageBox.Show("" +
+                "P1: Parcial 1\n" +
+                "P2: Parcial 2\n" +
+                "P3: Parcial 3\n" +
+                "S: Semestre\n");
         }
     }
 }
